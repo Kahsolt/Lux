@@ -15,6 +15,6 @@ void luxX_error(char *msg)
 
 void luxX_help()
 {
-  printf("Usage: lux prog.asm\n");
-  exit(-0);
+  printf("Usage: lux <prog.asm>\n");
+  exit(0);
 }

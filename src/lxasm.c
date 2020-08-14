@@ -6,8 +6,7 @@
 void luxC_assemble(char *fn)
 {
   FILE *fp = fopen(fn, "rb");
-  if (!fp)
-    luxX_error("File is broken...");
+  if (!fp) luxX_error("File is broken...");
 
   char cmd[21];
   LUX_BYTE* p = ROM;

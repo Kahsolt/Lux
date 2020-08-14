@@ -30,10 +30,11 @@ LUX_BYTE BX; /* 基址 */
 LUX_BYTE CX; /* 计数 */
 LUX_BYTE DX; /* 数据 */
 LUX_BYTE SP; /* 栈指针 */
-static LUX_BYTE* REGS[4] = {&AX, &BX, &CX, &DX};
+static LUX_BYTE* REGS[4] = { &AX, &BX, &CX, &DX };
 
 void luxH_init();
-void luxH_dump();
-void luxH_coredump();
+void luxH_dump(int);
+
+#define luxH_coredump() luxH_dump(false)
 
 #endif //LUX_LXHW_H

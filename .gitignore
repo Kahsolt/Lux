@@ -1,3 +1,7 @@
+# projcet meta
+.idea/
+
+# Cmake stuff
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
